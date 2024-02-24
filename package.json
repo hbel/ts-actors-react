@@ -1,0 +1,32 @@
+{
+  "name": "ts-actors-react",
+  "version": "1.0.0",
+  "description": "React adapters for the ts-actors library",
+  "main": "lib/index.js",
+  "files": [
+    "lib/"
+  ],
+  "keywords": [
+    "React",
+    "Actors",
+    "Typescript"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Hendrik Belitz <hendrik@innovation-through-understanding.de>",
+  "license": "MIT",
+  "devDependencies": {
+	"@types/react": "^18.2.58",
+    "@types/uuid": "^9.0.8"
+  },
+  "peerDependencies": {
+    "mutative": "^1.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-actors": "^3.0.4",
+    "tsmonads": "^3.3.0",
+    "typescript": "^5.3.3",
+    "uuid": "^9.0.1"
+  }
+}

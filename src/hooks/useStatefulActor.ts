@@ -27,13 +27,13 @@ export const useStatefulActor = <T>(
 			} else {
 				const callback = (x: T) => setState(x);
 				// eslint-disable-next-line @typescript-eslint/no-explicit-any
-				(actorOrError as any).actor.stateChanged.set(id, callback);
+				(actorOrError as any).actor.stateChanged.set(id.current, callback);
 				setResult(fromValue(actorOrError));
 				if ((actorOrError as any).actor.state) {
 					setState((actorOrError as any).actor.state);
 				}
 				return () => {
-					(actorOrError as any).actor.stateChanged.delete(id);
+					(actorOrError as any).actor.stateChanged.delete(id.current);
 				};
 			}
 		});

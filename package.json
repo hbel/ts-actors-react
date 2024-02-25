@@ -1,6 +1,6 @@
 {
   "name": "ts-actors-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React adapters for the ts-actors library",
   "main": "lib/index.js",
   "files": [
